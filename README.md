@@ -180,7 +180,7 @@ run()
 ```
 
 ### <a name="linepoint"></a>Line Point
-`collideLinePoint(x1, y1, x2, y2, px, py, buffer=0.1)`
+`collideLinePoint(x1, y1, x2, y2, px, py, [buffer])`
 
 Input x1,y1,x2,y2 values for the line and x,y coordinates for the point. There is an optional 7th value called 'buffer' that has a default of 0.1 - if you do not enter a value, it will use 0.1. You can increase this number to make the collision detection less sensistive, with the caveat that it will also be less accurate about touching the line.
 
