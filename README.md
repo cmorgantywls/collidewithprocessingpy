@@ -288,7 +288,30 @@ run()
 ```
 
 ### <a name="pointtri"></a>Point Triangle
+`collidePointTriangle(px, py, x1, y1, x2, y2, x3, y3)`
 
+Takes inputs of x,y coordinates of a point and x1, y1, x2, y2, x3, y3 of a triangle. Returns true if the point is touching the triangle and false if it is not.
+
+Example:
+```
+from processing import *
+from collide2d import *
+
+def setup():
+    size(400,400)
+
+def draw():
+    background(220)
+    text(str(mouseX) + ", " + str(mouseY), 20, 20)
+    
+    triangle(200,300,250,200,310,350)
+    if collideLineRect(mouseX, mouseY, 200,300,250,200,310,350):
+      background(0)
+
+    
+draw = draw
+run()
+```
 
 ### <a name="other"></a>Dealing With Other Shapes
 For most other shapes, such as triangles and other polygons, consider using functions that deal with circle collision. Imagine your shape inscribed in a circle, and use that circle for your code. It won't be perfect, but it will work!
