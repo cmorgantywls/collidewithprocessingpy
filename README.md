@@ -14,6 +14,7 @@ Creation would not have been possible without [Jeffrey Thompson's Collision Dete
 * [collideLineCircle](#linecirc)
 * [collideLineLine](#lineline)
 * [collideLineRect](#linerect)
+* [collidePointTriangle](#pointtri)
 * [Dealing With Other Shapes](#other)
 
 ### <a name="pointpoint"></a>Point Point
@@ -285,6 +286,9 @@ def draw():
 draw = draw
 run()
 ```
+
+### <a name="pointtri"></a>Point Triangle
+
 
 ### <a name="other"></a>Dealing With Other Shapes
 For most other shapes, such as triangles and other polygons, consider using functions that deal with circle collision. Imagine your shape inscribed in a circle, and use that circle for your code. It won't be perfect, but it will work!
